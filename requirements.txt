@@ -1,2 +1,2 @@
-streanlit
-dotenv
+streamlit
+python-dotenv
