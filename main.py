@@ -2,10 +2,11 @@ import streamlit as st
 import pandas as pd
 from googleapiclient.discovery import build
 import matplotlib.pyplot as plt
-
+from dotenv import load_dotenv
+import os
 # --- CONFIGURATION ---
 # REPLACE THIS WITH YOUR ACTUAL API KEY FROM GOOGLE CLOUD
-API_KEY = "AIzaSyDOeo0Mhf81MXD-VjNsWGgOYuneQ-rvXsA"
+API_KEY = os.getenv("API_KEY")
 YOUTUBE_API_SERVICE_NAME = 'youtube'
 YOUTUBE_API_VERSION = 'v3'
 
